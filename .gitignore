@@ -1,0 +1,100 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Generated experiment output
+outputs/
+
+# Local-only material, never uploaded:
+# - all HTML documents (blueprint, lessons, article plan)
+# - the article (LaTeX paper, plan, research log); it has its own local git repo inside
+# - lesson source code (the lessons' answer key)
+*.html
+docs/article/
+docs/_build/lesson_src/
+
+# C / C++ / Fortran build artifacts
+## object files, precompiled headers, dependency files
+*.o
+*.obj
+*.ko
+*.lo
+*.gch
+*.pch
+*.d
+*.mod
+*.smod
+## static / shared libraries
+*.a
+*.lib
+*.la
+*.so
+*.so.*
+*.dylib
+*.dll
+## executables and debug symbols
+*.out
+*.exe
+*.app
+*.dSYM/
+## build directories (any depth)
+build*/
+cmake-build-*/
+_build_cpp/
+tmp_build_dir/
+## CMake / Make / Ninja generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+CMakeUserPresets.json
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+.ninja_deps
+.ninja_log
+build.ninja
+## language-server and compiler caches
+.cache/
+.ccache/
+## AMReX run output (plotfiles, checkpoints)
+plt[0-9]*/
+chk[0-9]*/
+## OpenFOAM build and run output
+lnInclude/
+platforms/
+Make/linux*/
+Make/darwin*/
+processor[0-9]*/
+postProcessing/
+log.*Foam
+log.blockMesh
+log.snappyHexMesh
+log.checkMesh
+log.decomposePar
+log.reconstructPar
+log.setFields
+## field and mesh output from all backends
+*.vtk
+*.vtu
+*.pvtu
+*.vtp
+*.pvd
+*.xdmf
+*.h5
+*.hdf5
+
+# Secrets
+.env
+.env.*
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
